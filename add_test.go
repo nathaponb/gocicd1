@@ -13,7 +13,7 @@ var table = []struct{
 	{476,98,574},
 }
 
-func test_add(t *testing.T) {
+func TestAdd(t *testing.T) {
 	for _, row := range table {
 		got := add(row.x, row.y)
 		if got != row.want {
